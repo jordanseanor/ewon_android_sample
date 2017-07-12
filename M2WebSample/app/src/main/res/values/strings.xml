@@ -6,4 +6,8 @@
     <string name="password_hint">Password</string>
     <string name="login_botton_text">Login</string>
     <string name="sample_text">Sample</string>
+    <string name="developer_id_pref">dev-id-pref</string>
+    <string name="account_pref">account-pref</string>
+    <string name="username_pref">username-pref</string>
+    <string name="password_pref">password-pref</string>
 </resources>
