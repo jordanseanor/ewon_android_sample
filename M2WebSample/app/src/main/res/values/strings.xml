@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">M2Web Sample</string>
+    <string name="developer_id_hint">Developer ID</string>
+    <string name="account_hint">Account</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_botton_text">Login</string>
+    <string name="sample_text">Sample</string>
 </resources>
