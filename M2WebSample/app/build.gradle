@@ -31,5 +31,7 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile group: 'com.google.code.gson', name: 'gson', version: '2.6.2'
     compile group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.0.2'
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
     testCompile 'junit:junit:4.12'
 }
