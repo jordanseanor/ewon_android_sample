@@ -83,7 +83,7 @@ public class Login extends AppCompatActivity {
         }
     }
 
-    private void writeToPreferences(String developerId, String account, String username, String password){
+    private void writeToPreferences(String developerId, String account, String username, String password, String sessionId){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         preferences
                 .edit()
@@ -91,6 +91,7 @@ public class Login extends AppCompatActivity {
                 .putString(getString(R.string.account_pref), account)
                 .putString(getString(R.string.username_pref), username)
                 .putString(getString(R.string.password_pref), password)
+                .putString("sessionid", sessionId)
                 .apply();
     }
 
@@ -127,7 +128,7 @@ public class Login extends AppCompatActivity {
             }
             
             if(result.getSuccess()){
-                writeToPreferences(developerId, account, username, password);
+                writeToPreferences(developerId, account, username, password,  result.getSession());
                 startActivity(new Intent(Login.this, Dashboard.class));
             }else{
                 AlertDialog alertDialog = new AlertDialog.Builder(Login.this).create();
